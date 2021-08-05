@@ -1,0 +1,9 @@
+{% include "blog/navigation.html" %}
+<div class="py-5" style="background-image: url('{{ blog_detail.img.url }}'); background-repeat: no-repeat; background-size: cover">
+            <h1 style="text-align: center">{{ blog_detail.title }}</h1>
+</div>
+<div class="container my-5">
+        {{ blog_detail.content }}
+</div>
+
+{% include "blog/footer.html" %}
